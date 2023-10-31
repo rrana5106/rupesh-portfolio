@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  padding-right: 10px;
+}
+
+/* main logo / nav style */
+.header {
+  background-color: #37494f;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.title {
+  background-color: #55b8c6;
+  padding-left: 50px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-bar {
+  display: flex;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+
+.nav-bar a {
+  color: #55b8c6;
+  font-size: larger;
+  font-weight: bolder;
+  text-decoration: none;
+}
+img {
+  border-radius: 50%;
+  width: 40px;
+
+}
+
+/* banner style */
+.hero-banner {
+  background-image: url(../images/02-hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 150px;
+  padding: 0px 120px 30px 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-size: cover;
+}
+
+.hero-banner div h2 {
+  background-color: #55b8c6;
+  padding: 5px;
+}
+
+/* about me style */
+.page-wrapper {
+  margin: 0px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.page-section {
+  display: flex;
+  padding: 20px;
+  /* margin-bottom: 20px */
+}
+
+.page-section h2 {
+  flex: 0 0 10%;
+}
+
+.page-section article {
+  flex: 0 0 77%;
+  padding-left: 20px;
+}
+#about p {
+  padding-bottom: 20px;
+}
+
+#about h2,
+#work h2,
+#contact h2 {
+  border-right: 3px solid #042e45;
+  color: #042e45;
+  font-size: 30px;
+  display: flex;
+}
+
+
+
+article {
+  padding-left: 20px;
+}
+
+/* portfolio contaner style */
+.container {
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "placeholder1 placeholder1"
+    "placeholder2 placeholder3"
+    "placeholder4 placeholder5";
+  width: 100%;
+  /* gap: 20px; */
+  cursor: pointer;
+  padding: 0px 20px;
+}
+
+#placeholder1 {
+  grid-area: placeholder1;
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+#placeholder2 {
+  grid-area: placeholder2;
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+#placeholder3 {
+  grid-area: placeholder3;
+  background-image: url(../images/02-portfolio-3.jpg);
+}
+
+#placeholder4 {
+  grid-area: placeholder4;
+  background-image: url(../images/02-portfolio-4.jpg);
+}
+
+#placeholder5 {
+  grid-area: placeholder5;
+  background-image: url(../images/02-run-buddy.jpg);
+}
+
+.categoryGridArea {
+  border: 5px solid #55b8c6;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10px;
+  display: grid;
+  align-items: center;
+  display: flex;
+  align-items: end;
+}
+
+.heading {
+  background-color: rgba(85, 184, 198, 0.8);
+  margin-bottom: 20px;
+}
+
+.categoryGridArea:hover {
+  opacity: 0.5;
+}
+
+/* contact style */
+article ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* the below code need to ammend */
+
+/* Default styles for all screen sizes */
+/* You can place your base styles here */
+
+.page-section h2 {min-width: 110px;}
+
+/* Media query for screens 320px and smaller (mobile devices) */
+@media (max-width: 768px) {
+  /* Adjust the styles for smaller mobile screens here */
+  .header{
+    border: 2px solid;
+  }
+
+  .page-section h2{
+    font-size: 10px;
+  }
+
+
+  .container {
+    grid-template-areas:
+      "placeholder1"
+      "placeholder2"
+      "placeholder3"
+      "placeholder4"
+      "placeholder5";
+  }
+
+
+}
+
+
+
