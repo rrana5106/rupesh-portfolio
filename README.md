@@ -1,7 +1,5 @@
-# rupesh-portfolio
+# Rupesh-Portfolio
 This is my first portfolio project where it shows all the webwork that I have learned in frontend developer bootcamp.
-
-# <Rupesh-Portfolio>
 
 ## Description
 
