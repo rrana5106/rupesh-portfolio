@@ -179,9 +179,12 @@ article {
   opacity: 0.5;
 }
 
+/* Set the position of .categoryGridArea to relative */
 .categoryGridArea {
   position: relative;
 }
+
+/* Style the anchor tags within .categoryGridArea */
 .categoryGridArea a {
   position: absolute;
   top: 0;
